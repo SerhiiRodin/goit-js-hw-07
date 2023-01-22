@@ -10,15 +10,14 @@ function createListItemsMarkup(items) {
     .map(
       (item) =>
         `<div class="gallery__item">
-  <a class="gallery__link" href="${item.original}">
-    <img
+        <a class="gallery__link" href="${item.original}">
+        <img
       class="gallery__image"
       src="${item.preview}"
       data-source="${item.original}"
-      alt="${item.description}"
-    />
-  </a>
-</div>`
+      alt="${item.description}"/>
+       </a>
+     </div>`
     )
     .join("");
 }
